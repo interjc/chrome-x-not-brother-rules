@@ -1,0 +1,42 @@
+{
+  "format": "not-brother-filter-rules",
+  "schemaVersion": 1,
+  "name": "默认",
+  "description": "",
+  "rules": [
+    {
+      "id": "rule-79bebce123914dbc919c2269",
+      "label": "福 - ID",
+      "enabled": true,
+      "expiresAt": null,
+      "type": "display_name",
+      "match": {
+        "mode": "regex",
+        "value": "高返币|se播|找主人|gu炮|固炮|线下|dd|蹲一个弟弟|约炮|破初|炮友|初男|单男|同城|上门|涩播|线下|约见|处男|男大|寻欢|免费|无偿|一夜情",
+        "caseSensitive": false
+      }
+    },
+    {
+      "id": "rule-23defc95e798401196dac475",
+      "label": "福 - Post",
+      "enabled": true,
+      "expiresAt": null,
+      "type": "content",
+      "match": {
+        "mode": "regex",
+        "value": "比我骚|我福不黑|我的福|比她骚|她的主页|没人比她sao|主页能打|她的主页",
+        "caseSensitive": false
+      }
+    },
+    {
+      "id": "rule-96374945ce2d4c0d930290b2",
+      "label": "福 - Handle",
+      "enabled": true,
+      "expiresAt": null,
+      "type": "user_handles",
+      "handles": [
+        "enaurismateo"
+      ]
+    }
+  ]
+}
