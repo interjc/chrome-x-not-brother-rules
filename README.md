@@ -138,15 +138,15 @@ npx skills add https://github.com/interjc/chrome-x-not-brother/tree/main/skills/
 
 如果你整理了一套好用的拦截规则，非常欢迎贡献到本仓库与大家分享！
 
-### 贡献流程
+请在提交贡献前阅读完整的 **[贡献指南 (CONTRIBUTING.md)](CONTRIBUTING.md)**。
 
-1. **Fork 本仓库** 到你自己的 GitHub 账号。
-2. 在 `rules/` 目录下新增规则文件（如 `rules/filter-crypto-spam.json`）或改进已有规则文件。
-3. **自测与规范检查**：
-   - 确保 JSON 格式合法并通过 `not-brother-filter-rules` v1 规范验证。
-   - 确保正则表达式安全，避免灾难性回溯（ReDoS）及范围过宽导致的误杀。
-   - 确保规则中**不包含任何个人隐私信息、私密关键词或敏感凭据**。
-4. 提交 Pull Request，并在 PR 描述中简要说明规则集的用途和适用场景。
+### 核心规范要点：
+1. **严禁滥用与恶意针对**：禁止包含隐私、凭据、定向霸凌或过度泛化误杀正常推文的规则，确保正则安全（防 ReDoS）。
+2. **推荐使用 AI Skill**：推荐使用 `npx skills add https://github.com/interjc/chrome-x-not-brother/tree/main/skills/x-not-brother-rules` 辅助生成和检查。
+3. **必须亲测可用**：提交 PR 前必须在 Not Brother 插件中导入并亲测验证有效且无误杀。
+4. **标准 GitHub Flow**：Fork -> 新建分支 -> 提交修改 -> 发起 Pull Request。
+
+详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ---
 
