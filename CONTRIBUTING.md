@@ -20,7 +20,7 @@
 为了确保规则严格符合 `not-brother-filter-rules` (v1) Schema，强烈推荐安装并使用官方提供的 Agent Skill：
 
 ```bash
-npx skills add https://github.com/interjc/chrome-x-not-brother/tree/main/skills/x-not-brother-rules
+npx skills add https://github.com/interjc/chrome-x-not-brother --skill x-not-brother-rules
 ```
 
 该 Skill 能帮助你或你的 AI 编程助手（如 Antigravity, Cursor, Claude Code 等）自动完成：

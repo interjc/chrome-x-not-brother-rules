@@ -73,7 +73,7 @@
 Not Brother 官方提供了专用于规则编辑与校验的 Agent 技能（Skill）。你可以将该 Skill 添加到你的 AI 编程助手（如 Antigravity, Cursor, Claude Code, Copilot 等）中，让 AI 按照官方规范自动生成、阅读、合并、校验和优化规则文件：
 
 ```bash
-npx skills add https://github.com/interjc/chrome-x-not-brother/tree/main/skills/x-not-brother-rules
+npx skills add https://github.com/interjc/chrome-x-not-brother --skill x-not-brother-rules
 ```
 
 安装后，你可以直接对 AI 下达指令，例如：
@@ -142,7 +142,7 @@ npx skills add https://github.com/interjc/chrome-x-not-brother/tree/main/skills/
 
 ### 核心规范要点：
 1. **严禁滥用与恶意针对**：禁止包含隐私、凭据、定向霸凌或过度泛化误杀正常推文的规则，确保正则安全（防 ReDoS）。
-2. **推荐使用 AI Skill**：推荐使用 `npx skills add https://github.com/interjc/chrome-x-not-brother/tree/main/skills/x-not-brother-rules` 辅助生成和检查。
+2. **推荐使用 AI Skill**：推荐使用 `npx skills add https://github.com/interjc/chrome-x-not-brother --skill x-not-brother-rules` 辅助生成和检查。
 3. **必须亲测可用**：提交 PR 前必须在 Not Brother 插件中导入并亲测验证有效且无误杀。
 4. **标准 GitHub Flow**：Fork -> 新建分支 -> 提交修改 -> 发起 Pull Request。
 

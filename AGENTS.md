@@ -17,7 +17,7 @@ When modifying, generating, or validating rule sets in this repository, agents m
 For interactive rule editing and validation, the official skill is hosted in the main extension repository:
 
 ```bash
-npx skills add https://github.com/interjc/chrome-x-not-brother/tree/main/skills/x-not-brother-rules
+npx skills add https://github.com/interjc/chrome-x-not-brother --skill x-not-brother-rules
 ```
 
 Agents handling rule generation or updates should refer to the schema and behavioral invariants below.
